@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "RPi Cam Demo",
+    "slug": "rpi-cam-demo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera access is needed to scan the Raspberry Pi's QR code."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "ACCESS_WIFI_STATE",
+        "ACCESS_NETWORK_STATE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.xanderpalma.rpicamdemo"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan the Pi's QR code."
+        }
+      ],
+      "expo-status-bar"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "50c199e7-9f8e-4bb9-8f9b-4a6cd07ee427"
+      }
+    }
+  }
+}
