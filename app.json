@@ -19,6 +19,7 @@
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO"
       ],
+      "usesCleartextTraffic": true,
       "package": "com.xanderpalma.rpicamdemo"
     },
     "plugins": [
