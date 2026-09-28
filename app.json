@@ -22,15 +22,23 @@
       "usesCleartextTraffic": true,
       "package": "com.xanderpalma.rpicamdemo"
     },
-    "plugins": [
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan the Pi's QR code."
-        }
-      ],
-      "expo-status-bar"
-    ],
+   "plugins": [
+  [
+    "expo-camera",
+    {
+      "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan the Pi's QR code."
+    }
+  ],
+  "expo-status-bar",
+  [
+    "expo-build-properties",
+    {
+      "android": {
+        "usesCleartextTraffic": true
+      }
+    }
+  ]
+],
     "extra": {
       "eas": {
         "projectId": "50c199e7-9f8e-4bb9-8f9b-4a6cd07ee427"
